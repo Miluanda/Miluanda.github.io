@@ -1,0 +1,93 @@
+@import url(fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+body {
+    margin: 0;
+    padding: 1%;
+    font-family: 'Open Sans', 'Nunito Sans', 'Karla', 'Avenir', 'Helvetica Neue', sans-serif;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    /* background-color: #f1f1f1; */
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+.image-overlay {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+}
+
+.image-overlay:hover .overlay {
+    opacity: 1;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {
+        float: left;
+    }
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}

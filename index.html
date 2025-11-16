@@ -1,93 +1,100 @@
- <!DOCTYPE html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title> Miranda Shou Portfolio Website</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css" />
+    <title>Miranda Shou · Portfolio</title>
+    <link rel="stylesheet" href="main.css?v=2" />
 </head>
-
 <body>
-
-    <div class="sidebar">
-        <h2 style="padding-left: 0.8em;"> Xiyao Shou</h2>
-        <a href="index.html">Projects</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-
-        <p class="copyright" id="bottom">
-            © Copyright 2022. Xiyao Shou.
-        </p>
-
-    </div>
-
-    <div class="content">
-        <h2> Interaction and Embodiment</h2>
-        <!-- <div class="image-overlay">
-            <img src="culture.png" alt="picture" class="image">
-            <div class="overlay">MeTrA</div>
-        </div> -->
-        <div class="image-overlay">
-            <h3 style="margin-left: 3%;">
-                <mark> MeTrA / 2022</mark>
-            </h3>
-            <a href="metra.html">
-                <img src="images/metra.png" alt="picture" class="image"> </a>
+    <header class="hero" id="top">
+        <nav class="nav">
+            <a class="nav__logo" href="#top">MS</a>
+            <div class="nav__links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <div class="hero__content">
+            <p class="hero__eyebrow">Designer · Creative Technologist</p>
+            <h1 class="hero__title">Hi, I'm Miranda Shou.</h1>
+            <p class="hero__subtitle">I craft interactive and embodied experiences that bring science, art, and community together.</p>
+            <a class="hero__cta" href="#projects">View my work</a>
         </div>
-        <div class="image-overlay">
-            <h3 style="margin-left: 3%;">
-                <mark> RE/Portal / 2022</mark>
-            </h3>
-            <a href="reportal.html">
-                <img src="images/reportal.png" alt="picture" class="image"> </a>
-        </div>
-        <div class="image-overlay">
-            <h3 style="margin-left: 3%;">
-                <mark> GDNA (Grasping DNA) / 2020 </mark>
-            </h3>
-            <a href="gdna.html">
-                <img src="images/gdna.png" alt="picture" class="image"> </a>
-        </div>
-        <h2> Fabrication and installation</h2>
-       
-        <div class="image-overlay">
-            <h3 style="margin-left: 3%;">
-                <mark> Thesis: Seen the unforseeable / 2022 </mark>
-            </h3>
-            <a href="thesis.html">
-                <img src="images/thesis.JPG" alt="picture" class="image"> </a>
-        </div>
+    </header>
 
-        <!-- <div class="image-overlay">
-            <h3 style="margin-left: 3%;">
-                Bugzilla / 2022
-            </h3>
-            <a href="bugzilla.html">
-                <img src="images/bugzilla.JPG" alt="picture" class="image"> </a>
-        </div> -->
-        
-        <!-- <h2> Digital Interface</h2> -->
+    <main>
+        <section class="section section--about" id="about">
+            <div class="section__inner">
+                <h2>About</h2>
+                <p>
+                    I'm a multidisciplinary designer exploring the intersection of physical fabrication, speculative futures, and digital interfaces. My practice combines storytelling with emerging technologies to make complex systems tangible and human.
+                </p>
+            </div>
+        </section>
 
-        <h2> Community Engagement</h2>
+        <section class="section section--projects" id="projects">
+            <div class="section__inner">
+                <div class="section__header">
+                    <h2>Selected Projects</h2>
+                    <p>Highlights from recent collaborations and personal explorations.</p>
+                </div>
+                <div class="project-grid">
+                    <a class="project-card" href="metra.html">
+                        <img class="project-card__image" src="images/metra.png" alt="Installation view of the MeTrA mixed-reality project" />
+                        <div class="project-card__tag">Immersive Installation</div>
+                        <h3 class="project-card__title">MeTrA</h3>
+                        <p class="project-card__description">A mixed-reality exploration of textile memories that translates motion into generative patterns.</p>
+                    </a>
+                    <a class="project-card" href="reportal.html">
+                        <img class="project-card__image" src="images/reportal.png" alt="Portal artwork collage for the RE/Portal narrative" />
+                        <div class="project-card__tag">Interactive Narrative</div>
+                        <h3 class="project-card__title">RE/Portal</h3>
+                        <p class="project-card__description">A speculative storytelling experience that invites communities to co-create alternate futures.</p>
+                    </a>
+                    <a class="project-card" href="gdna.html">
+                        <img class="project-card__image" src="images/gdna.png" alt="Grasping DNA toolkit pieces arranged on a table" />
+                        <div class="project-card__tag">Research &amp; Fabrication</div>
+                        <h3 class="project-card__title">Grasping DNA</h3>
+                        <p class="project-card__description">A tactile toolkit turning molecular biology into sculptural forms for science outreach.</p>
+                    </a>
+                    <a class="project-card" href="thesis.html">
+                        <img class="project-card__image" src="images/thesis.JPG" alt="Projection mapping from the Seen the Unforeseeable thesis installation" />
+                        <div class="project-card__tag">Public Art</div>
+                        <h3 class="project-card__title">Seen the Unforeseeable</h3>
+                        <p class="project-card__description">Thesis installation illuminating the unseen infrastructures of data and climate.</p>
+                    </a>
+                    <a class="project-card" href="culture.html">
+                        <img class="project-card__image" src="images/culture.png" alt="Culture squared workshop participants collaborating" />
+                        <div class="project-card__tag">Community Engagement</div>
+                        <h3 class="project-card__title">Culture²</h3>
+                        <p class="project-card__description">Workshops bridging bioart practices with neighborhood storytelling.</p>
+                    </a>
+                    <a class="project-card" href="igem.html">
+                        <img class="project-card__image" src="images/igem2022.png" alt="Illustration created for the iGEM Toronto team" />
+                        <div class="project-card__tag">Competition</div>
+                        <h3 class="project-card__title">iGEM Toronto</h3>
+                        <p class="project-card__description">Synthetic biology outreach materials created for the 2022 iGEM team.</p>
+                    </a>
+                    <a class="project-card" href="bugzilla.html">
+                        <img class="project-card__image" src="images/bugzilla.JPG" alt="Bugzilla arcade cabinet" />
+                        <div class="project-card__tag">Interactive Installation</div>
+                        <h3 class="project-card__title">Bugzilla</h3>
+                        <p class="project-card__description">Two-player retro arcade experience highlighting the mutualistic relationship between treehoppers and ants.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-        <div class="image-overlay">
-            <h3 style="margin-left: 3%;">
-               <mark>Culture²</mark>
-            </h3>
-            <a href="culture.html">
-                <img src="images/culture.png" alt="picture" class="image"> </a>
-        </div>
+    </main>
 
-        <div class="image-overlay">
-            <h3 style="margin-left: 3%;">
-               <mark>Synthetic Biology Competition: iGEM Toronto / 2022</mark>
-            </h3>
-            <a href="igem.html">
-                <img src="images/igem2022.png" alt="picture" class="image"> </a>
-        </div>
-    </div>
+    <footer class="footer">
+        <p>© <span id="year"></span> Miranda Shou. Crafted with curiosity and care.</p>
+    </footer>
 
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
-
 </html>

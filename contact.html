@@ -1,33 +1,62 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title> Miranda Shou Portfolio Website</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Miranda Shou · Contact</title>
+    <link rel="stylesheet" href="main.css?v=2" />
 </head>
+<body class="page-contact">
+    <header class="hero hero--subpage" id="top">
+        <nav class="nav">
+            <a class="nav__logo" href="index.html#top">MS</a>
+            <div class="nav__links">
+                <a href="index.html#about">About</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="contact.html" aria-current="page">Contact</a>
+            </div>
+        </nav>
+        <div class="hero__content hero__content--left">
+            <p class="hero__eyebrow">Let's connect</p>
+            <h1 class="hero__title">Get in touch</h1>
+            <p class="hero__subtitle">I welcome collaborations, commissions, conversations, and creative experiments at the intersection of art, science, and community.</p>
+        </div>
+    </header>
 
-<body>
+    <main>
+        <section class="section section--contact">
+            <div class="section__inner">
+                <div class="section__header">
+                    <h2>Reach out</h2>
+                    <p>Share a project brief, invite me to speak, or ask about my practice—I'm excited to hear from you.</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <h3>Email</h3>
+                        <a class="contact-card__link" href="mailto:hello@mirandashou.com">hello@mirandashou.com</a>
+                        <p>Send a note with project details, timelines, or just say hello.</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>LinkedIn</h3>
+                        <a class="contact-card__link" href="https://www.linkedin.com/in/mirandashou/" target="_blank" rel="noopener">linkedin.com/in/mirandashou</a>
+                        <p>Connect for professional updates and collaborative opportunities.</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Location</h3>
+                        <p>Based in Toronto, Canada · Open to remote and international projects.</p>
+                    </div>
+                </div>
+                <p class="contact-note">Need a résumé or CV? Email me and I'll share the most relevant version for your project.</p>
+            </div>
+        </section>
+    </main>
 
-    <div class="sidebar">
-        <h2 style="padding-left: 0.8em;"> Xiyao Shou</h2>
-        <a href="index.html">Projects</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </div>
+    <footer class="footer">
+        <p>© <span id="year"></span> Miranda Shou. Crafted with curiosity and care.</p>
+    </footer>
 
-    <div class="content">
-        <p>
-            For further details on work, commissions, talks, and shows, <br>please email me at miranda [dot] shou0606 [at] gmail [dot] com.
-            <br>You can also follow me here:
-        </p>
-        <a href="https://www.linkedin.com/in/mirandashou/" class="fa fa-linkedin"></a>
-        <a href="https://www.instagram.com/miluandashou/" class="fa fa-instagram"></a>
-        <p style=" text-decoration: underline;">Resume/CV (available upon request) </p>
-    </div>
-
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
-
 </html>
